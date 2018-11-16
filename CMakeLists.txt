@@ -36,14 +36,11 @@ find_package(catkin REQUIRED COMPONENTS
    # Data initialization related services
    GetScene.srv
    GetTimeline.srv
-   # Mesh related services
    GetMesh.srv
    # Dynamic reconfiguration related services
    List.srv
    ListInContext.srv
    ReconfigureInputs.srv
-   ReconfigureMultipleInputs.srv
-   ReconfigureSingleInput.srv
  )
 
 ## Generate added messages and services with any dependencies listed here
