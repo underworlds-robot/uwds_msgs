@@ -1,9 +1,6 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(uwds_msgs)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
@@ -37,13 +34,14 @@ find_package(catkin REQUIRED COMPONENTS
    Enable.srv
    # Clients topology related services
    GetTopology.srv
-   # Data initilization related services
+   # Data initialization related services
    GetScene.srv
    GetTimeline.srv
    # Mesh related services
    GetMesh.srv
    # Dynamic reconfiguration related services
    List.srv
+   ListInContext.srv
    ReconfigureInputs.srv
    ReconfigureMultipleInputs.srv
    ReconfigureSingleInput.srv
@@ -56,26 +54,6 @@ generate_messages(
    geometry_msgs
  )
 
-################################################
-## Declare ROS dynamic reconfigure parameters ##
-################################################
-
-## To declare and build dynamic reconfigure parameters within this
-## package, follow these steps:
-## * In the file package.xml:
-##   * add a build_depend and a exec_depend tag for "dynamic_reconfigure"
-## * In this file (CMakeLists.txt):
-##   * add "dynamic_reconfigure" to
-##     find_package(catkin REQUIRED COMPONENTS ...)
-##   * uncomment the "generate_dynamic_reconfigure_options" section below
-##     and list every .cfg file to be processed
-
-## Generate dynamic reconfigure parameters in the 'cfg' folder
-# generate_dynamic_reconfigure_options(
-#   cfg/DynReconf1.cfg
-#   cfg/DynReconf2.cfg
-# )
-
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -86,10 +64,7 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES uwds_msgs
-  CATKIN_DEPENDS std_msgs geometry_msgs shape_msgs
-#  DEPENDS system_lib
+  CATKIN_DEPENDS std_msgs geometry_msgs
 )
 
 ###########
