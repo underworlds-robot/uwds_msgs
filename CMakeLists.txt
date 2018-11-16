@@ -30,7 +30,6 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
-   ListInContext.srv
    Enable.srv
    # Clients topology related services
    GetTopology.srv
