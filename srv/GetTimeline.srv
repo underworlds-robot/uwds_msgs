@@ -1,0 +1,8 @@
+# Definition the get timeline service
+
+Context ctxt
+---
+Situation[] situations
+std_msgs/Time origin
+bool success
+string error

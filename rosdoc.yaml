@@ -1,0 +1,5 @@
+- builder: doxygen
+   name: uwds_msgs
+   output_dir: docs
+   file_patterns: '*.c *.cpp *.h *.cc *.hh *.dox'
+   use_mdfile_as_mainpage: README.md

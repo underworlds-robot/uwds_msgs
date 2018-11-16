@@ -1,0 +1,9 @@
+# uwds_msgs
+This ROS package contain the Underworlds messages &amp; services
+
+### Generate documentation
+Use the following commands :
+
+`roscd uwds_msgs && rosdoc_lite . `
+
+Then open the file `./doc/html/index-msgs.html` with your favorite application.

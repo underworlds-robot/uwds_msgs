@@ -1,0 +1,7 @@
+# Definition of the enable service
+
+string name
+bool enable
+---
+bool success
+string error

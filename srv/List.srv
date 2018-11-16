@@ -1,0 +1,6 @@
+# Definition of the list service
+
+---
+string[] list
+bool success
+string error

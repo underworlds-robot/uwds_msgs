@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>uwds_msgs</name>
+  <version>0.1.0</version>
+  <description>The uwds_msgs package</description>
+
+  <maintainer email="yoan.sallami@laas.fr">Yoan Sallami</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <!-- Commonly used license strings: -->
+  <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
+  <license>LAAS-CNRS(2012-2018)</license>
+  <license>Plymouth University(2015-2018)</license>
+  <license>Bristol Robotics Lab(2018)</license>
+
+  <url type="repository">https://github.com/underworlds-robot/uwds_msgs</url>
+
+  <author email="yoan.sallami@laas.fr">Yoan Sallami</author>
+  <author email="severin.lemaignan@brl.uk">Severin Lemaignan</author>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <export>
+    <rosdoc config="rosdoc.yaml" />
+  </export>
+</package>

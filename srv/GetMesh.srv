@@ -1,0 +1,7 @@
+# Definition of the get mesh service
+
+string mesh_id
+---
+uwds_msgs/Mesh mesh
+bool success
+string error

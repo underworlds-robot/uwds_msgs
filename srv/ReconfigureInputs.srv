@@ -1,0 +1,6 @@
+# Definition of the reconfigure inputs service
+
+string[] inputs
+---
+bool success
+string error

@@ -1,0 +1,7 @@
+# Definition of the list service
+
+Context ctxt
+---
+string[] list
+bool success
+string error
