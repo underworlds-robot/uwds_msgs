@@ -1,5 +1,5 @@
 # uwds_msgs
-This ROS package contains the Underworlds messages &amp; services
+This ROS package contains the [Underworlds](https://github.com/underworlds-robot/uwds) messages &amp; services
 
 ### Generate documentation
 Use the following commands :
