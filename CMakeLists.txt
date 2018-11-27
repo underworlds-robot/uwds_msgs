@@ -33,6 +33,7 @@ find_package(catkin REQUIRED COMPONENTS
    Enable.srv
    # Clients topology related services
    GetTopology.srv
+   Connect.srv
    # Data initialization related services
    GetScene.srv
    GetTimeline.srv
