@@ -1,10 +1,10 @@
 # Definition of a situation
 #
 # Situation types :
-# - GENERIC = 0
-# - FACT = 1
-# - ACTION = 2
-# - INTERNAL = 3
+uint8 GENERIC=0
+uint8 FACT=1
+uint8 ACTION=2
+uint8 INTERNAL=3
 
 
 string id # The unique ID

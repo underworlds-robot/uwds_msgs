@@ -1,10 +1,8 @@
 # Definition of an underworlds node
-#
 # Node types :
-# - UNDEFINED = 0
-# -	ENTITY = 1
-# -	MESH = 2
-# -	CAMERA = 3
+uint8 ENTITY=0
+uint8 MESH=1
+uint8 CAMERA=2
 
 string id # The unique ID
 string name # The human-friendly name

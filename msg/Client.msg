@@ -1,11 +1,11 @@
 # Definition of a client
 #
 # Client types :
-# - UNDEFINED = 0
-# -	READER = 1
-# - MONITOR = 2
-# -	PROVIDER = 3
-# - FILTER = 4
+uint8 UNDEFINED = 0
+uint8 READER = 1
+uint8 MONITOR = 2
+uint8 PROVIDER = 3
+uint8 FILTER = 4
 
 string name # The client name
 string id # The unique ID
