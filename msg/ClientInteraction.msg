@@ -1,10 +1,8 @@
 # Definition of a client interaction
 #
 # Interaction types :
-uint8 READ = 1
-uint8 WRITE = 2
+uint8 READ = 0
+uint8 WRITE = 1
 
-string client_id
-string world
+Context ctxt
 uint8 type
-std_msgs/Time last_activity

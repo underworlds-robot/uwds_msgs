@@ -1,0 +1,6 @@
+# Definition of the push mesh service
+
+uwds_msgs/Mesh mesh
+---
+bool success
+string error

@@ -4,6 +4,7 @@ project(uwds_msgs)
 find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
+  shape_msgs
   message_generation
 )
 
@@ -13,6 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
    # Clients topology messages
    Client.msg
    ClientInteraction.msg
+   Connection.msg
    Context.msg
    # Data related messages
    Property.msg
@@ -24,20 +26,21 @@ find_package(catkin REQUIRED COMPONENTS
    Invalidations.msg
    Changes.msg
    ChangesInContextStamped.msg
-
  )
 
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
+   QueryOntology.srv
    Enable.srv
    # Clients topology related services
    GetTopology.srv
-   Connect.srv
+   AdvertiseConnection.srv
    # Data initialization related services
    GetScene.srv
    GetTimeline.srv
    GetMesh.srv
+   PushMesh.srv
    # Dynamic reconfiguration related services
    List.srv
    ListInContext.srv
@@ -49,6 +52,7 @@ generate_messages(
    DEPENDENCIES
    std_msgs
    geometry_msgs
+   shape_msgs
  )
 
 ###################################
@@ -61,7 +65,7 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  CATKIN_DEPENDS std_msgs geometry_msgs
+  CATKIN_DEPENDS std_msgs geometry_msgs shape_msgs
 )
 
 ###########

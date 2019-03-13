@@ -1,0 +1,8 @@
+# Definition of the query message.
+
+Context ctxt
+string query
+---
+string[] result
+bool success
+string error

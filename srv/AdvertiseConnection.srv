@@ -1,0 +1,6 @@
+# Definition of the advertise connection service
+
+Connection connection
+---
+bool success
+string error
