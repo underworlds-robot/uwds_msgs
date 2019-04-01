@@ -32,6 +32,7 @@ find_package(catkin REQUIRED COMPONENTS
  add_service_files(
    FILES
    QueryOntology.srv
+   SimpleQuery.srv
    Enable.srv
    # Clients topology related services
    GetTopology.srv
