@@ -1,4 +1,4 @@
-# Definition of the query message.
+# Definition of the query in context message.
 
 Context ctxt
 string query

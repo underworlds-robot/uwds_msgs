@@ -31,7 +31,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
-   QueryOntology.srv
+   QueryInContext.srv
    SimpleQuery.srv
    Enable.srv
    # Clients topology related services

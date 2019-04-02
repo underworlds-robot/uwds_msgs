@@ -1,3 +1,5 @@
+# Definition of the simple query message.
+
 string request
 ---
 string result
