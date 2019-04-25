@@ -1,0 +1,7 @@
+# Definition of the get octree service
+
+string octree_id
+---
+uwds_msgs/Octree octree
+bool success
+string error

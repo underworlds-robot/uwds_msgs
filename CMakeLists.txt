@@ -20,7 +20,6 @@ find_package(catkin REQUIRED COMPONENTS
    Property.msg
    Node.msg
    Situation.msg
-   MeshTriangle.msg
    Mesh.msg
    # Changes messages
    Invalidations.msg
